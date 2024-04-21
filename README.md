@@ -45,10 +45,16 @@ $ forge snapshot
 $ anvil
 ```
 
-### Deploy
+### Deploy Baobab
 
 ```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
+$ forge script script/DeployCrowdFund.s.sol --rpc-url $BAOBAB_RPC_URL --account haxxdev --sender $SENDER_ADRESS --broadcast --gas-estimate-multiplier 200
+```
+
+### Deploy Cypress
+
+```shell
+$ forge script script/DeployCrowdFund.s.sol --rpc-url $CYPRESS_RPC_URL --account haxxdev --sender $SENDER_ADRESS --broadcast --gas-estimate-multiplier 200
 ```
 
 ### Cast
